@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1633854110388,
+  "lastUpdate": 1633854116522,
   "repoUrl": "https://github.com/oxeye-nikolay/opentelemetry-python-contrib",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - sdkextension": [
@@ -10410,58 +10410,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "47993494+cynthiakedu@users.noreply.github.com",
-            "name": "Cynthia Du",
-            "username": "cynthiakedu"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "e96a2cd1adda1722c14d4949947535e1f19806b5",
-          "message": "Fix broken links to projects (#413)",
-          "timestamp": "2021-04-06T12:58:39-07:00",
-          "tree_id": "d8a2dcce768bc984b1735557704084957f176375",
-          "url": "https://github.com/open-telemetry/opentelemetry-python-contrib/commit/e96a2cd1adda1722c14d4949947535e1f19806b5"
-        },
-        "date": 1617739160603,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/test_benchmark_aws_xray_ids_generator.py::test_generate_xray_trace_id",
-            "value": 1001416.0712956928,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000012377692479776405",
-            "extra": "mean: 998.5859311266489 nsec\nrounds: 80646"
-          },
-          {
-            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/test_benchmark_aws_xray_ids_generator.py::test_generate_xray_span_id",
-            "value": 1349422.8347759107,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000004694073480018223",
-            "extra": "mean: 741.0575649300192 nsec\nrounds: 172414"
-          },
-          {
-            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/propagation/test_benchmark_aws_xray_format.py::test_extract_single_header",
-            "value": 50526.31578704057,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000011382958421020059",
-            "extra": "mean: 19.79166666761974 usec\nrounds: 12"
-          },
-          {
-            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/propagation/test_benchmark_aws_xray_format.py::test_inject_empty_context",
-            "value": 197860.11537981292,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000013286161244316547",
-            "extra": "mean: 5.0540756942367935 usec\nrounds: 48075"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "owais@users.noreply.github.com",
             "name": "Owais Lone",
             "username": "owais"
@@ -15604,6 +15552,58 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000019437831374014445",
             "extra": "mean: 4.547352940629507 usec\nrounds: 17"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "benjaminsky@gmail.com",
+            "name": "Ben Campbell",
+            "username": "benjaminsky"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5be20f9dc80a6062ec34d066de8daf97cb29046a",
+          "message": "Adding `tracked_url_callback` to `RequestsInstrumentor` (#714)\n\n* Adding `tracked_url_callback` to `RequestsInstrumentor`\r\n\r\n* linting fixes and CHANGELOG update\r\n\r\n* Switching to `get_excluded_urls`\r\n\r\n* Update CHANGELOG.md\r\n\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>\r\n\r\n* Fixing linting\r\n\r\n* Stop patch in tearDown\r\n\r\n* Fixing lint\r\n\r\n* Fixing lint\r\n\r\n* Fixing lint\r\n\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>\r\nCo-authored-by: Owais Lone <owais@users.noreply.github.com>",
+          "timestamp": "2021-10-08T21:14:02Z",
+          "tree_id": "fbb8f0f476ba3a8629d0dead1e01024578f7cc7a",
+          "url": "https://github.com/oxeye-nikolay/opentelemetry-python-contrib/commit/5be20f9dc80a6062ec34d066de8daf97cb29046a"
+        },
+        "date": 1633854114077,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/test_benchmark_aws_xray_ids_generator.py::test_generate_xray_trace_id",
+            "value": 1123553.7466941406,
+            "unit": "iter/sec",
+            "range": "stddev: 1.5342026191838298e-7",
+            "extra": "mean: 890.0330784729473 nsec\nrounds: 72464"
+          },
+          {
+            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/test_benchmark_aws_xray_ids_generator.py::test_generate_xray_span_id",
+            "value": 1645972.3767596905,
+            "unit": "iter/sec",
+            "range": "stddev: 1.490654526106846e-7",
+            "extra": "mean: 607.5436101598675 nsec\nrounds: 86207"
+          },
+          {
+            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/propagation/test_benchmark_aws_xray_format.py::test_extract_single_header",
+            "value": 127495.42947498763,
+            "unit": "iter/sec",
+            "range": "stddev: 4.551474695143338e-7",
+            "extra": "mean: 7.843418419922123 usec\nrounds: 11835"
+          },
+          {
+            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/propagation/test_benchmark_aws_xray_format.py::test_inject_empty_context",
+            "value": 221518.98727677204,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000017167660631274959",
+            "extra": "mean: 4.514285715610337 usec\nrounds: 21"
           }
         ]
       }
