@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1633854126237,
+  "lastUpdate": 1633854166161,
   "repoUrl": "https://github.com/oxeye-nikolay/opentelemetry-python-contrib",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - sdkextension": [
@@ -18734,58 +18734,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "owais@users.noreply.github.com",
-            "name": "Owais Lone",
-            "username": "owais"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "ca8eac61c26914c970a4cc67a42ab4dce6f7313d",
-          "message": "Account for ProxyTracerProvider (#399)",
-          "timestamp": "2021-04-07T08:27:18-07:00",
-          "tree_id": "30a3b2292bb3a34463ae44d409a8beb9bb411005",
-          "url": "https://github.com/open-telemetry/opentelemetry-python-contrib/commit/ca8eac61c26914c970a4cc67a42ab4dce6f7313d"
-        },
-        "date": 1617809315264,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/test_benchmark_aws_xray_ids_generator.py::test_generate_xray_trace_id",
-            "value": 3461459.489989142,
-            "unit": "iter/sec",
-            "range": "stddev: 2.139738173564714e-7",
-            "extra": "mean: 288.8954797512293 nsec\nrounds: 40323"
-          },
-          {
-            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/test_benchmark_aws_xray_ids_generator.py::test_generate_xray_span_id",
-            "value": 7342083.283245781,
-            "unit": "iter/sec",
-            "range": "stddev: 9.365974645822999e-8",
-            "extra": "mean: 136.20112458845676 nsec\nrounds: 89286"
-          },
-          {
-            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/propagation/test_benchmark_aws_xray_format.py::test_extract_single_header",
-            "value": 435894.87142845284,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000001446681280573557",
-            "extra": "mean: 2.294131143876366 usec\nrounds: 52357"
-          },
-          {
-            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/propagation/test_benchmark_aws_xray_format.py::test_inject_empty_context",
-            "value": 1918910.4084304562,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000002292029767096923",
-            "extra": "mean: 521.1290717939314 nsec\nrounds: 192308"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "ocelotl@users.noreply.github.com",
             "name": "Diego Hurtado",
             "username": "ocelotl"
@@ -23928,6 +23876,58 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 6.078594814639642e-7",
             "extra": "mean: 404.51719346020315 nsec\nrounds: 188680"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "benjaminsky@gmail.com",
+            "name": "Ben Campbell",
+            "username": "benjaminsky"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5be20f9dc80a6062ec34d066de8daf97cb29046a",
+          "message": "Adding `tracked_url_callback` to `RequestsInstrumentor` (#714)\n\n* Adding `tracked_url_callback` to `RequestsInstrumentor`\r\n\r\n* linting fixes and CHANGELOG update\r\n\r\n* Switching to `get_excluded_urls`\r\n\r\n* Update CHANGELOG.md\r\n\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>\r\n\r\n* Fixing linting\r\n\r\n* Stop patch in tearDown\r\n\r\n* Fixing lint\r\n\r\n* Fixing lint\r\n\r\n* Fixing lint\r\n\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>\r\nCo-authored-by: Owais Lone <owais@users.noreply.github.com>",
+          "timestamp": "2021-10-08T21:14:02Z",
+          "tree_id": "fbb8f0f476ba3a8629d0dead1e01024578f7cc7a",
+          "url": "https://github.com/oxeye-nikolay/opentelemetry-python-contrib/commit/5be20f9dc80a6062ec34d066de8daf97cb29046a"
+        },
+        "date": 1633854162789,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/test_benchmark_aws_xray_ids_generator.py::test_generate_xray_trace_id",
+            "value": 4444548.055089331,
+            "unit": "iter/sec",
+            "range": "stddev: 3.28538725996643e-8",
+            "extra": "mean: 224.9947548333652 nsec\nrounds: 50252"
+          },
+          {
+            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/test_benchmark_aws_xray_ids_generator.py::test_generate_xray_span_id",
+            "value": 8824374.149695965,
+            "unit": "iter/sec",
+            "range": "stddev: 3.07504700731187e-8",
+            "extra": "mean: 113.3224841825641 nsec\nrounds: 104167"
+          },
+          {
+            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/propagation/test_benchmark_aws_xray_format.py::test_extract_single_header",
+            "value": 1494229.8581445632,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000012104818886580678",
+            "extra": "mean: 669.241077300996 nsec\nrounds: 172414"
+          },
+          {
+            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/propagation/test_benchmark_aws_xray_format.py::test_inject_empty_context",
+            "value": 2672254.5194550096,
+            "unit": "iter/sec",
+            "range": "stddev: 5.286888315631879e-7",
+            "extra": "mean: 374.21585134197 nsec\nrounds: 185186"
           }
         ]
       }
