@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1633854121423,
+  "lastUpdate": 1633854126237,
   "repoUrl": "https://github.com/oxeye-nikolay/opentelemetry-python-contrib",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - sdkextension": [
@@ -28194,6 +28194,58 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000013582838659866371",
             "extra": "mean: 2.727272727492453 usec\nrounds: 22"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "benjaminsky@gmail.com",
+            "name": "Ben Campbell",
+            "username": "benjaminsky"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5be20f9dc80a6062ec34d066de8daf97cb29046a",
+          "message": "Adding `tracked_url_callback` to `RequestsInstrumentor` (#714)\n\n* Adding `tracked_url_callback` to `RequestsInstrumentor`\r\n\r\n* linting fixes and CHANGELOG update\r\n\r\n* Switching to `get_excluded_urls`\r\n\r\n* Update CHANGELOG.md\r\n\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>\r\n\r\n* Fixing linting\r\n\r\n* Stop patch in tearDown\r\n\r\n* Fixing lint\r\n\r\n* Fixing lint\r\n\r\n* Fixing lint\r\n\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>\r\nCo-authored-by: Owais Lone <owais@users.noreply.github.com>",
+          "timestamp": "2021-10-08T21:14:02Z",
+          "tree_id": "fbb8f0f476ba3a8629d0dead1e01024578f7cc7a",
+          "url": "https://github.com/oxeye-nikolay/opentelemetry-python-contrib/commit/5be20f9dc80a6062ec34d066de8daf97cb29046a"
+        },
+        "date": 1633854122033,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/test_benchmark_aws_xray_ids_generator.py::test_generate_xray_trace_id",
+            "value": 1217035.4699381082,
+            "unit": "iter/sec",
+            "range": "stddev: 1.1421881542420563e-7",
+            "extra": "mean: 821.6687390802624 nsec\nrounds: 83327"
+          },
+          {
+            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/test_benchmark_aws_xray_ids_generator.py::test_generate_xray_span_id",
+            "value": 1791226.6869661752,
+            "unit": "iter/sec",
+            "range": "stddev: 1.0220594508493359e-7",
+            "extra": "mean: 558.2766309124802 nsec\nrounds: 138889"
+          },
+          {
+            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/propagation/test_benchmark_aws_xray_format.py::test_extract_single_header",
+            "value": 185547.76221124642,
+            "unit": "iter/sec",
+            "range": "stddev: 4.6077256973009504e-7",
+            "extra": "mean: 5.389447914017408 usec\nrounds: 15244"
+          },
+          {
+            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/propagation/test_benchmark_aws_xray_format.py::test_inject_empty_context",
+            "value": 396396.39699120965,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000012615722194901725",
+            "extra": "mean: 2.5227272689417903 usec\nrounds: 44"
           }
         ]
       }
