@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634453218018,
+  "lastUpdate": 1634570205799,
   "repoUrl": "https://github.com/oxeye-nikolay/opentelemetry-python-contrib",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - sdkextension": [
@@ -28192,6 +28192,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000016595705321666345",
             "extra": "mean: 630.8793990038006 nsec\nrounds: 188680"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mario.jonke@dynatrace.com",
+            "name": "Mario Jonke",
+            "username": "mariojonke"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3058281f5e01a5764af1f72c172ef9c579108f72",
+          "message": "botocore: Add DynamoDB extension (#735)\n\n* botocore: Add dynamodb extension\r\n\r\n* extract addtional DynamoDB specific attributes according to the spec\r\n* move DynamoDB tests to separate test module\r\n\r\n* changelog\r\n\r\n* add license info\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2021-10-18T11:53:06+02:00",
+          "tree_id": "ae6ec76d45a16715a11371649f40c7be214c70a3",
+          "url": "https://github.com/oxeye-nikolay/opentelemetry-python-contrib/commit/3058281f5e01a5764af1f72c172ef9c579108f72"
+        },
+        "date": 1634570202763,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/test_benchmark_aws_xray_ids_generator.py::test_generate_xray_trace_id",
+            "value": 1355912.9946137462,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000005335178439703552",
+            "extra": "mean: 737.5104479213774 nsec\nrounds: 86957"
+          },
+          {
+            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/test_benchmark_aws_xray_ids_generator.py::test_generate_xray_span_id",
+            "value": 1959108.9682033693,
+            "unit": "iter/sec",
+            "range": "stddev: 8.09267710492823e-7",
+            "extra": "mean: 510.43613001121895 nsec\nrounds: 97088"
           }
         ]
       }
