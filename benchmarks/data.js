@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1637480729285,
+  "lastUpdate": 1637480799908,
   "repoUrl": "https://github.com/oxeye-nikolay/opentelemetry-python-contrib",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - sdkextension": [
@@ -18482,58 +18482,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "owais@users.noreply.github.com",
-            "name": "Owais Lone",
-            "username": "owais"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "9e996185d1daaa13bbb98e9bbbd8f6504f3c3254",
-          "message": "Adds support for request and response hooks to Falcon instrumentation. (#415)",
-          "timestamp": "2021-04-13T09:30:11-07:00",
-          "tree_id": "8a06a60ddea05c60f838854e290e4a590eba9f83",
-          "url": "https://github.com/open-telemetry/opentelemetry-python-contrib/commit/9e996185d1daaa13bbb98e9bbbd8f6504f3c3254"
-        },
-        "date": 1618331491564,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/test_benchmark_aws_xray_ids_generator.py::test_generate_xray_trace_id",
-            "value": 3898213.3577280613,
-            "unit": "iter/sec",
-            "range": "stddev: 4.5856029882239736e-8",
-            "extra": "mean: 256.52777522230355 nsec\nrounds: 46081"
-          },
-          {
-            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/test_benchmark_aws_xray_ids_generator.py::test_generate_xray_span_id",
-            "value": 7686760.104908572,
-            "unit": "iter/sec",
-            "range": "stddev: 3.5827762088037705e-8",
-            "extra": "mean: 130.09382189010213 nsec\nrounds: 96154"
-          },
-          {
-            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/propagation/test_benchmark_aws_xray_format.py::test_extract_single_header",
-            "value": 567768.8971481704,
-            "unit": "iter/sec",
-            "range": "stddev: 3.537687689903715e-7",
-            "extra": "mean: 1.7612799944182589 usec\nrounds: 64517"
-          },
-          {
-            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/propagation/test_benchmark_aws_xray_format.py::test_inject_empty_context",
-            "value": 2461785.2738534096,
-            "unit": "iter/sec",
-            "range": "stddev: 8.204093534620158e-7",
-            "extra": "mean: 406.2092704110104 nsec\nrounds: 196079"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "32409412+dhruv-vora@users.noreply.github.com",
             "name": "Dhruv Vora",
             "username": "dhruv-vora"
@@ -23606,6 +23554,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 3.365058065733585e-8",
             "extra": "mean: 119.12121560961194 nsec\nrounds: 101011"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "anthony.p.shaw@gmail.com",
+            "name": "Anthony Shaw",
+            "username": "tonybaloney"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f0ac738ee13c6de5e44c3177182a73829ed559bc",
+          "message": "Fix a logic bug on parentless spans (#782)\n\n* Fix a logic bug on parentless spans\r\n\r\n* Add a test\r\n\r\n* Simplify logic\r\n\r\n* Add changelog entry\r\n\r\n* Update tox configuration\r\n\r\n* Rename the fixtures to keep pylint happy",
+          "timestamp": "2021-11-19T17:25:33+05:30",
+          "tree_id": "8b909b41d730cf4a46b283ac48b6c4108a751a8c",
+          "url": "https://github.com/oxeye-nikolay/opentelemetry-python-contrib/commit/f0ac738ee13c6de5e44c3177182a73829ed559bc"
+        },
+        "date": 1637480795885,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/test_benchmark_aws_xray_ids_generator.py::test_generate_xray_trace_id",
+            "value": 3742051.2327509504,
+            "unit": "iter/sec",
+            "range": "stddev: 1.95502686738151e-7",
+            "extra": "mean: 267.2331130177683 nsec\nrounds: 49505"
+          },
+          {
+            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/test_benchmark_aws_xray_ids_generator.py::test_generate_xray_span_id",
+            "value": 7794527.166854,
+            "unit": "iter/sec",
+            "range": "stddev: 2.0133518147085883e-7",
+            "extra": "mean: 128.2951458880643 nsec\nrounds: 111112"
           }
         ]
       }
