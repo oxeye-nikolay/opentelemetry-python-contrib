@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1637480799908,
+  "lastUpdate": 1645530216164,
   "repoUrl": "https://github.com/oxeye-nikolay/opentelemetry-python-contrib",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - sdkextension": [
@@ -28178,6 +28178,60 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000003573153157015881",
             "extra": "mean: 612.8776389952739 nsec\nrounds: 192308"
+          }
+        ]
+      }
+    ],
+    "OpenTelemetry Python Benchmarks - Python  -": [
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1080b04902ff689e7a3e5838c99e90f68119b273",
+          "message": "Safer patching for Falcon API (#895)\n\nWe replace Falcon API class with a partial callable. It is safer to\r\nreplace it with a sub-class of the base falcon.API class so any other\r\nsystems making assumptions about falcon don't fail.",
+          "timestamp": "2022-02-20T17:40:13+05:30",
+          "tree_id": "75f2fd303e7acf9276eec82f632c2d56c9d95dbd",
+          "url": "https://github.com/oxeye-nikolay/opentelemetry-python-contrib/commit/1080b04902ff689e7a3e5838c99e90f68119b273"
+        },
+        "date": 1645530212087,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-aws-xray/tests/performance/benchmarks/test_benchmark_aws_xray_propagator.py::test_extract_single_header",
+            "value": 2322226.7789195306,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000015356241561117056",
+            "extra": "mean: 430.621164598454 nsec\nrounds: 194970"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-aws-xray/tests/performance/benchmarks/test_benchmark_aws_xray_propagator.py::test_inject_empty_context",
+            "value": 4106789.0308715245,
+            "unit": "iter/sec",
+            "range": "stddev: 3.6308951201264227e-7",
+            "extra": "mean: 243.4992380866778 nsec\nrounds: 47827"
+          },
+          {
+            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/test_benchmark_aws_xray_ids_generator.py::test_generate_xray_trace_id",
+            "value": 4773374.313908696,
+            "unit": "iter/sec",
+            "range": "stddev: 3.3422842906187224e-8",
+            "extra": "mean: 209.495408119604 nsec\nrounds: 55866"
+          },
+          {
+            "name": "sdk-extension/opentelemetry-sdk-extension-aws/tests/performance/benchmarks/trace/test_benchmark_aws_xray_ids_generator.py::test_generate_xray_span_id",
+            "value": 9574162.939683216,
+            "unit": "iter/sec",
+            "range": "stddev: 3.7443102957191083e-8",
+            "extra": "mean: 104.44777327279924 nsec\nrounds: 117648"
           }
         ]
       }
